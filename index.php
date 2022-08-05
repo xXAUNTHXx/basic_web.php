@@ -7,7 +7,6 @@
     <title>Ez</title>
 </head>
 <body>
-
     <?php
         include("header.php")
     ?>

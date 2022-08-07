@@ -16,16 +16,18 @@
   <main <div class="container">
     <div class="card">
       <div class="card-body">
-        <form name="forml" action="#" method="post">
+        <form name="forml" action="output.php" method="post">
           <!-------------row1------------->
           <div class="container text-center">
             <div class="row">
               <div class="col-md-2">
-                <label for="firstname" class="form-label">คำนำหน้า</label><select class="form-select" aria-label="Default select example">
-                  <option value="">คำนำหน้า</option>
-                  <option value="1">นาย</option>
-                  <option value="2">นาง</option>
-                  <option value="3">นางสาว</option>
+
+                <label for="first_name" class="form-label">คำนำหน้า</label>
+                <select class="form-select" aria-label="Default select example" name="first_name" id="first_name">
+                  <option value="#">คำนำหน้า</option>
+                  <option value="นาย">นาย</option>
+                  <option value="นาง">นาง</option>
+                  <option value="นางสาว">นางสาว</option>
                 </select>
               </div>
 
@@ -35,8 +37,8 @@
               </div>
 
               <div class="col-md-5">
-                <label for="lastname" class="form-label">นางสกุล</label>
-                <input type="text" name="lastname" class="form-control" id="lastname" placeholder="นางสกุล">
+                <label for="last_name" class="form-label">นางสกุล</label>
+                <input type="text" name="last_name" class="form-control" id="last_name" placeholder="นางสกุล">
               </div>
             </div>
           </div>
@@ -49,17 +51,17 @@
                 <div>
                   <label for="sex" class="form-label">เพศ</label>
                 </div>
-                <input type="radio" class="form-check-input" name="sex" id="sex">
+                <input type="radio" class="form-check-input" name="sex" id="sex" value="ชาย">
                 <label class="form-check-label" for="sex">ชาย
                 </label>
-                <input type="radio" class="form-check-input" name="sex" id="sex">
+                <input type="radio" class="form-check-input" name="sex" id="sex" value="หญิง">
                 <label class="form-check-label" for="sex">หญิง
                 </label>
               </div>
 
               <div class="col-md-4">
-                <label for="txt_birthdate" class="form-label">ว/ด/ป เกิด</label>
-                <input type="date" class="form-control" id="txt_birthdate" name="txt_birthdate" 
+                <label for="date_birthdate" class="form-label">ว/ด/ป เกิด</label>
+                <input type="date" class="form-control" id="date_birthdate" name="date_birthdate" 
                 placeholder="00/00/0000" data-provide="datepicker" data-date-language="th-th">
               </div>
 
@@ -94,9 +96,9 @@
               </div>
 
               <div class="col-md-4">
-              <button  type="button" class="btn btn-outline-success">
+              <button  type="submit" class="btn btn-outline-success">
               บันทึก <i class="bi bi-check2-circle"></i></button>
-              <button type="button" class="btn btn-outline-danger">
+              <button type="reset" class="btn btn-outline-danger">
               ยกเลิก <i class="bi bi-x"></i></button>
               </div>
 

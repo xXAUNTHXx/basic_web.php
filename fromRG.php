@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>From</title>
+  <title>สมัคร</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
@@ -13,7 +13,7 @@
   <?php
   include("header.php")
   ?>
-  <main <div class="container">
+  <main class="container mt-5">
     <div class="card">
       <div class="card-body">
         <form name="forml" action="output.php" method="post">
